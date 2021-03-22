@@ -14,12 +14,12 @@ if (!isset($_SESSION['userID'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <title>LAW OFFICE</title>
-    <link rel="shortcut icon" href="http://localhost/Kawelo Lawyers/assets/images/logo/logo.png">
+    <link rel="shortcut icon" href="assets/images/logo/logo.png">
     <!--styles-->
-    <link href="http://localhost/Kawelo Lawyers/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="http://localhost/Kawelo Lawyers/assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
-    <link href="http://localhost/Kawelo Lawyers/assets/css/icons.css" rel="stylesheet" type="text/css">
-    <link href="http://localhost/Kawelo Lawyers/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -88,14 +88,14 @@ if (!isset($_SESSION['userID'])) {
         <!-- END wrapper -->
 
         <!-- jQuery  -->
-        <script src="http://localhost/Kawelo Lawyers/assets/js/jquery.min.js"></script>
-        <script src="http://localhost/Kawelo Lawyers/assets/js/bootstrap.bundle.min.js"></script>
-        <script src="http://localhost/Kawelo Lawyers/assets/js/metismenu.min.js"></script>
-        <script src="http://localhost/Kawelo Lawyers/assets/js/jquery.slimscroll.js"></script>
-        <script src="http://localhost/Kawelo Lawyers/assets/js/waves.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metismenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/waves.min.js"></script>
 
         <!-- App js -->
-        <script src="http://localhost/Kawelo Lawyers/assets/js/app.js"></script>
+        <script src="assets/js/app.js"></script>
         
     </body>
 

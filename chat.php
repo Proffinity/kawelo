@@ -8,7 +8,7 @@
     } else {
     $userID = $_SESSION['userID'];
     require 'DB/connect.inc.php';
-    include('DB/database_connectionPDO.php'); 
+    include('DB/database_connectionPDO.php');
     require 'php/user_details.php';
 ?>
 <!DOCTYPE html>
@@ -19,22 +19,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
 	<title>kawelo Lawyers | Chat</title>
-	<link rel="shortcut icon" href="http://localhost/Kawelo Lawyers/assets/images/logo/logo.png">
-	<link rel="stylesheet" href="http://localhost/Kawelo Lawyers/assets/css/bootstrap-reboot.css">
+	<link rel="shortcut icon" href="assets/images/logo/logo.png">
+	<link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
 
 	<!-- DataTables -->
 
 	<!-- Responsive datatable examples -->
-	<link href="http://localhost/Kawelo Lawyers/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
 	<!--styles-->
-	<link href="http://localhost/Kawelo Lawyers/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="http://localhost/Kawelo Lawyers/assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
-	<link href="http://localhost/Kawelo Lawyers/assets/css/icons.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons.css" rel="stylesheet" type="text/css">
 
-	<link href="http://localhost/Kawelo Lawyers/assets/css/style.css" rel="stylesheet" type="text/css">
-	<link href="http://localhost/Kawelo Lawyers/assets/emoji/lib/css/font-awesome.css" rel="stylesheet" type="text/css">
-	<link href="http://localhost/Kawelo Lawyers/assets/emoji/lib/css/emoji.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <!-- emoji line added -->
+  <link href="asset/css/style.css"  rel="stylesheet">
+	<link href="asset/stylesheet.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 
@@ -92,7 +93,7 @@
 
 				<li class="dropdown notification-list list-inline-item">
 					<a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-						<img src="assets/images/logo/logo.png" class="mr-2 img-fluid" height="32" width="32" alt=""> 
+						<img src="assets/images/logo/logo.png" class="mr-2 img-fluid" height="32" width="32" alt="">
 						<?php
                            $role = User_role($userID, $conn);
                             echo "$role"." User";
@@ -198,6 +199,7 @@
 	<!-- Left Sidebar End -->
 	<div class="content-page">
 		<!-- Start content -->
+    <div class="container">
 		<div class="content">
 
 			<div class="page-title-box10">
@@ -209,6 +211,9 @@
 			</div>
 
 		<div class="card shadow">
+
+
+
 			<div class="row g-0">
 				<div class="col-12 col-lg-5 col-xl-3 border-right">
 
@@ -216,9 +221,10 @@
 						<div class="d-flex align-items-center">
 							<div class="flex-grow-1">
 								<input type="text" class="form-control my-3" placeholder="Search...">
+                <button type="button" class="btn btn-primary btn-sm">group chat <i class="fa fa-users"></i></button>
 							</div>
 
-							<button type="button" class="btn btn-primary btn-sm">group chat <i class="fa fa-users"></i></button>
+
 						</div>
 					</div>
 
@@ -226,24 +232,26 @@
 
 					<hr class="d-block d-lg-none mt-1 mb-0">
 				</div>
-				<div class="col-12 col-lg-7 col-xl-9">
-					<div id="user_model_details"></div>
-				</div>
+        <!-- chat removed duplicate classes  -->
+				<div id="user_model_details"  class="col-12 col-lg-7 col-xl-9"></div>
 			</div>
+
 		</div>
+    </div>
+
 	</div>
 	</div>
 
 
 </div>
 	<!-- jQuery  -->
-	<script type="text/javascript" src="http://localhost/Kawelo Lawyers/js/jquery-3.3.1.js"></script>
-	<script type="text/javascript" src="http://localhost/Kawelo Lawyers/js/chatFunctions.js"></script>
-	<script src="http://localhost/Kawelo Lawyers/assets/js/jquery.min.js"></script>
-	<script src="http://localhost/Kawelo Lawyers/assets/js/bootstrap.bundle.min.js"></script>
-	<script src="http://localhost/Kawelo Lawyers/assets/js/metismenu.min.js"></script>
-	<script src="http://localhost/Kawelo Lawyers/assets/js/jquery.slimscroll.js"></script>
-	<script src="http://localhost/Kawelo Lawyers/assets/js/waves.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/chatFunctions.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/metismenu.min.js"></script>
+	<script src="assets/js/jquery.slimscroll.js"></script>
+	<script src="assets/js/waves.min.js"></script>
 
 	<script src="assets/js/search.js"></script>
 	<script src="assets/pages/dashboard.init.js"></script>
@@ -251,16 +259,14 @@
 	<!-- App js -->
 	<script src="assets/js/app.js"></script>
 	<!-- Begin emoji-picker JavaScript -->
-	<script src="assets/emoji/lib/js/config.js"></script>
-	<script src="assets/emoji/lib/js/util.js"></script>
-	<script src="assets/emoji/lib/js/jquery.emojiarea.js"></script>
-	<script src="assets/emoji/lib/js/emoji-picker.js"></script>
-	<!-- End emoji-picker JavaScript -->
 
 
-	<!--custom js-->
+  <!-- '' this is a new change'' -->
+  <script src="asset/js/jquery.emojiarea.js"></script>
+  <script src="asset/js/main.js"></script>
 
-	
+
+
 	<script type="text/javascript">
 		$(function () {
 			$('.chat-messages').slimScroll({
@@ -275,21 +281,13 @@
 				childElementToFilter: '.list-group-item',
 				caseInsensitive: true
 			});
-			$( "#txt1" ).emojionePicker();
+
 		});
 
 	</script>
-	<script>
-		$(function() {
-			// Initializes and creates emoji set from sprite sheet
-			window.emojiPicker = new EmojiPicker({
-				emojiable_selector: '[data-emojiable=true]',
-				assetsPath: 'assets/emoji/lib/img/',
-				popupButtonClasses: 'fa fa-smile-o'
-			});
-			window.emojiPicker.discover();
-		});
-	</script>
+
+
+<!--- '' end this is a new change'' -->
 </body>
 
 </html>
